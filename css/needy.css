@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 550;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(4, 77%, 61%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+body {
+  background: var(--bg);
+}
+
+::placeholder {
+  font-style: italic;
+  text-indent: 10px;
+  color: var(--dark-grey);
+}
+
+#ann-center {
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.ann-center {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  height: 40px;
+  background: var(--grey2);
+  vertical-align: middle;
+  line-height: 40px;
+  text-align: center;
+  border: none;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.error {
+  background: #ddb5b5;
+  color: #a94442;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+
+.success {
+  background: #d4edda;
+  color: #40754c;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+.page-section {
+  padding: 10px;
+}
+
+.form {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.form h2 {
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form img {
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.form input {
+  height: 40px;
+  margin: 5px 0;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  background: var(--grey3);
+  text-indent: 10px;
+  margin-right: 2.5%;
+}
+
+.form label {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form #desc {
+  height: 150px;
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  background: var(--grey3);
+  margin: 10px 0;
+}
+
+.form #btn {
+  width: 100%;
+  height: 40px;
+  background: var(--gradient);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.account,
+.logout,
+.help-support {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+}
+
+.about {
+  height: 90px;
+  width: 80%;
+  margin: auto;
+  padding: 0px 10px 0 10px;
+}
+
+.about .header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.about .header p {
+  line-height: 50px;
+}
+
+.about span {
+  color: var(--grey);
+  font-size: 14px;
+  margin-left: 14%;
+  line-height: 10px;
+}
+
+.about .header img,
+p {
+  cursor: none;
+}
+
+#line {
+  background: var(--gradient);
+  height: 1px;
+  width: 80%;
+  margin: 0.5px auto;
+}
+
+.account img,
+.logout img,
+.about img,
+.help-support img {
+  width: 10%;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.account p,
+.logout p,
+.about p,
+.help-support p {
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+  line-height: 30px;
+  color: var(--dar-grey);
+  cursor: pointer;
+}
+
+.logout p {
+  color: var(--red);
+}
+
+.page-section.page-4 h3 {
+  margin: 15px 0;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.page-section.page-2 #ann .dropdown2 {
+  height: 40px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: var(--grey3);
+  border: none;
+}

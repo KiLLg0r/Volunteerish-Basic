@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(5, 75%, 60%);
+  --dred: hsl(5, 25%, 50%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --green: hsl(108, 100%, 80%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+body {
+  background: var(--bg);
+}
+
+.go-back {
+  position: relative;
+  z-index: 10;
+}
+
+.more-info-card {
+  position: relative;
+  top: -40px;
+}
+
+.more-info-card .image {
+  margin: auto;
+  overflow: hidden;
+  height: 150px;
+  aspect-ratio: 1/1;
+}
+
+.more-info-card .image img {
+  height: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+}
+
+.more-info-card span {
+  color: var(--dark-grey);
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.more-info-card {
+  padding: 15px;
+}
+
+.more-info-card p {
+  color: var(--light-red);
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.more-info-card .name {
+  text-align: center;
+}
+
+.more-info-card .name p {
+  padding: 10px;
+  text-indent: 0px;
+  font-size: 1.25em;
+  color: var(--gold);
+}
+
+.more-info-card .age,
+.city,
+.state,
+.country,
+.phone,
+.address,
+.diff,
+.type {
+  display: flex;
+}
+
+.more-info-card .age span,
+.city span,
+.state span,
+.country span,
+.phone span,
+.address span,
+.diff span,
+.type span {
+  flex: 1;
+}
+
+.more-info-card .age p,
+.city p,
+.state p,
+.country p,
+.phone p,
+.address p,
+.diff p,
+.type p {
+  flex: 1.5;
+}
+
+.more-info-card .map iframe {
+  height: 300px;
+  width: 100%;
+}
+
+.more-info-card .desc p {
+  line-height: 20px;
+  padding: 0 10px 10px 10px;
+}

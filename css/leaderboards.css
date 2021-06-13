@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(4, 77%, 61%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --green: hsl(108, 100%, 80%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+body {
+  background: var(--bg);
+}
+
+.go-back {
+  padding: 10px;
+}
+
+#ldb {
+  margin-bottom: 75px;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.leaderboards {
+  margin-bottom: 80px;
+}
+
+.leaderboards .top-3 {
+  margin: 20px 0 5px 0;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.leaderboards .top-3 img {
+  margin: auto 0;
+  height: 65px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.leaderboards .top-3 #silver,
+.leaderboards .top-3 #gold,
+.leaderboards .top-3 #bronze {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leaderboards .top-3 #silver p,
+.leaderboards .top-3 #gold p,
+.leaderboards .top-3 #bronze p {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  text-align: center;
+  font-size: 14px;
+}
+
+.leaderboards .top-3 #gold p {
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+.leaderboards .top-3 #silver p {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.leaderboards .top-3 #gold .podium {
+  transform: translateY(-25px);
+  height: 80px;
+  width: 70px;
+  background: linear-gradient(to bottom, var(--gold) 70%, transparent);
+  margin: auto;
+  font-size: 30px;
+  line-height: 80px;
+  color: var(--dark-grey);
+  border-radius: 10px 10px 0 0;
+}
+
+.leaderboards .top-3 #silver .podium {
+  transform: translateY(-5px);
+  height: 60px;
+  width: 70px;
+  background: linear-gradient(to bottom, var(--silver) 70%, transparent);
+  margin: auto;
+  font-size: 25px;
+  line-height: 60px;
+  color: var(--dark-grey);
+  border-radius: 10px 10px 0 0;
+}
+
+.leaderboards .top-3 #bronze .podium {
+  transform: translateY(10px);
+  height: 45px;
+  width: 70px;
+  background: linear-gradient(to bottom, var(--bronze) 70%, transparent);
+  margin: auto;
+  font-size: 20px;
+  line-height: 45px;
+  color: var(--dark-grey);
+  border-radius: 10px 10px 0 0;
+}
+
+.leaderboards .top-3 .circle {
+  margin: 0 auto;
+  height: 70px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 4px var(--grey);
+  box-shadow: 2px 2px 4px var(--grey);
+  overflow: hidden;
+}
+
+.leaderboards .top-3 .circle.gold {
+  -webkit-transform: translateY(-35px);
+  transform: translateY(-35px);
+  border: 4px solid var(--gold);
+  background: var(--gold);
+}
+
+.leaderboards .top-3 .circle.silver {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  border: 4px solid var(--silver);
+  background: var(--silver);
+}
+
+.leaderboards .top-3 .circle.bronze {
+  border: 4px solid var(--bronze);
+  background: var(--bronze);
+}
+
+.leaderboards .row {
+  border-radius: 10px;
+  margin: 2px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  border: 1px solid var(--silver);
+  display: flex;
+  width: 90%;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.leaderboards .row .place {
+  border-radius: 10px 0 0 10px;
+  width: 15%;
+}
+
+.leaderboards .row .name {
+  width: 65%;
+}
+
+.leaderboards .row .points {
+  width: 20%;
+  border-radius: 0 10px 10px 0;
+}
+
+.leaderboards .row.gold {
+  background: var(--gold);
+}
+
+.leaderboards .row.silver {
+  background: var(--silver);
+}
+
+.leaderboards .row.bronze {
+  background: var(--bronze);
+}
+
+.leaderboards .row.info {
+  background: transparent;
+  border: none;
+}
+
+.leaderboards .row.info .place {
+  text-align: left;
+  text-indent: 10px;
+  width: 25%;
+}
+
+.leaderboards .row.info .name {
+  width: 40%;
+}
+
+.leaderboards .row.info .points {
+  width: 35%;
+}

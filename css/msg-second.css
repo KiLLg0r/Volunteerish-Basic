@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(4, 77%, 61%);
+  --light-red: hsl(6, 53%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --blue2: hsl(200, 42%, 67%);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+::placeholder {
+  font-style: italic;
+  color: var(--grey);
+}
+
+body {
+  background: var(--bg);
+}
+
+.go-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background: var(--grey3);
+}
+
+.go-back a {
+  margin: auto 0;
+}
+
+.go-back .chat-user-name {
+  margin: auto 0;
+  font-size: 25px;
+  color: var(--red);
+  padding: 0 10px;
+}
+
+.go-back .chat-user-image {
+  margin: auto 10px;
+}
+
+.go-back .chat-user-image img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+}
+
+.messages {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  height: 100%;
+  overflow: auto;
+}
+
+.messages .msg-card-received {
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  width: 80%;
+  height: auto;
+  background: var(--grey3);
+  border-radius: 10px;
+}
+
+.messages .msg-card-sent {
+  float: right;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  width: 80%;
+  height: auto;
+  background: var(--gradient);
+  border-radius: 10px;
+}
+
+.messages .msg-card-received .img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.messages .msg-card-received .img img {
+  border-radius: 50%;
+}
+
+.messages .msg-card-received .data {
+  flex: 4;
+}
+
+.messages .msg-card-received .data .name {
+  width: 100%;
+  color: var(--dark-grey);
+  font-size: 18px;
+}
+
+.messages .msg-card-received .data .date {
+  margin: 5px 0;
+  float: right;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.messages .msg-card-received .img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.messages .msg-card-sent .data {
+  flex: 4;
+}
+
+.messages .msg-card-sent .img img {
+  border-radius: 50%;
+}
+
+.messages .msg-card-sent .data .name {
+  width: 100%;
+  color: var(--dark-grey);
+  font-size: 18px;
+}
+
+.messages .msg-card-sent .data .date {
+  margin: 5px 0;
+  float: left;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.send-msg {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  background: var(--bg);
+}
+
+.send-msg input {
+  border: 2px solid var(--grey);
+  border-radius: 30px;
+  background: var(--bg);
+  padding: 10px;
+  margin: 0 10px 0 0;
+  flex: 4;
+}
+
+.send-msg .send-msg-button {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1/1;
+  flex: 0.75;
+  background: var(--gradient);
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.send-msg .send-msg-button img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+#bottom-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--grey);
+}
+
+#bottom-btn img {
+  margin: 4px;
+}

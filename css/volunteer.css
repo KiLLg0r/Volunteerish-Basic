@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(5, 75%, 60%);
+  --dred: hsl(5, 25%, 50%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --green: hsl(108, 100%, 80%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+.ann .head h3 {
+  margin: 15px 0;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.ann .head p {
+  padding: 10px;
+  text-align: center;
+}
+
+.account,
+.logout,
+.help-support {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+}
+
+.about {
+  height: 90px;
+  width: 80%;
+  margin: auto;
+  padding: 0px 10px 0 10px;
+}
+
+.about .header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.about .header p {
+  line-height: 50px;
+}
+
+.about span {
+  color: var(--grey);
+  font-size: 14px;
+  margin-left: 14%;
+  line-height: 10px;
+}
+
+.about {
+  cursor: none;
+}
+
+#line {
+  background: var(--gradient);
+  height: 1px;
+  width: 80%;
+  margin: 0.5px auto;
+}
+
+.account img,
+.logout img,
+.about img,
+.help-support img {
+  width: 10%;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.account p,
+.logout p,
+.about p,
+.help-support p {
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+  line-height: 30px;
+  color: var(--dar-grey);
+  cursor: pointer;
+}
+
+.logout p {
+  color: var(--red);
+}
+
+.page-section.page-5 h3 {
+  margin: 15px 0;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.dropdown .dropbtn.filter p {
+  color: var(--dark-grey);
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.dropdown .dropbtn.filter {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  height: 40px;
+  background: var(--grey3);
+  border-radius: 20px;
+}
+
+.dropdown .dropdown-content.filter {
+  width: 90%;
+  margin: 0 5%;
+  background: var(--grey3);
+  border-radius: 0px 0px 20px 20px;
+  padding: 20px;
+}
+
+.dropdown .dropbtn.filter.down {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dropdown .dropdown-content.filter .filter-content {
+  display: flex;
+}
+
+.dropdown .dropdown-content.filter .filter-content label,
+select,
+option {
+  height: 40px;
+  margin: 5px 0;
+}
+
+.dropdown .dropdown-content.filter .filter-content label {
+  flex: 1;
+  line-height: 40px;
+}
+
+.dropdown .dropdown-content.filter .filter-content .dropdown2 {
+  flex: 1;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 16px;
+}
+
+.dropdown .dropdown-content.filter .filter-btn {
+  width: 90%;
+  height: 40px;
+  background: var(--grey2);
+  margin: 4px 5%;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+}

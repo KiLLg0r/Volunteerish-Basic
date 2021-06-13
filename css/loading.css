@@ -1,0 +1,48 @@
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: var(--bg);
+}
+
+.loading .spinner {
+  margin: 100% auto;
+  height: 100px;
+  width: 100px;
+  background: var(--bg);
+  border-radius: 50%;
+  border-top: 5px solid var(--red);
+  border-right: 5px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  -webkit-animation: spinner 700ms linear infinite;
+          animation: spinner 700ms linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(5, 75%, 60%);
+  --dred: hsl(5, 25%, 50%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --green: hsl(108, 100%, 80%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--silver)), color-stop(var(--bg)), to(var(--silver)));
+  background: linear-gradient(to bottom right, var(--silver), var(--bg), var(--silver));
+}
+
+.shop-card {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.shop-card .shop-card-img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shop-card .shop-card-img img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.shop-card .shop-card-title {
+  color: var(--gold);
+  margin: 3px 0;
+  font-size: 23px;
+}
+
+.shop-card .shop-card-price {
+  color: var(--blue);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.shop-card .shop-card-description {
+  color: var(--dark-grey);
+  font-size: 18px;
+  padding: 10px;
+}
+
+.shop-card .button-shop {
+  padding: 5px;
+  height: 40px;
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  line-height: 30px;
+}
+
+.shop-card .button-shop.activated {
+  background: var(--red);
+  pointer-events: all;
+  width: auto;
+  height: auto;
+}
+
+.shop-card .button-shop.disabled {
+  background: var(--dred);
+  pointer-events: none;
+  width: auto;
+  height: auto;
+}

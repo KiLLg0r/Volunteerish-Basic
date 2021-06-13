@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(4, 77%, 61%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --green: hsl(108, 100%, 80%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+::placeholder {
+  font-style: italic;
+  text-indent: 10px;
+  color: var(--dark-grey);
+}
+
+body {
+  background: var(--bg);
+  height: 100%;
+  width: 100%;
+}
+
+.acc {
+  height: 100%;
+  width: 100%;
+}
+
+#acc {
+  margin: -30px 0 15px 0;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.error {
+  background: #ddb5b5;
+  color: #a94442;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+
+.success {
+  background: #d4edda;
+  color: #40754c;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+
+.acc-center {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.acc-center h2 {
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.acc-center .img-upload {
+  margin-bottom: 50px;
+}
+
+.acc-center img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.acc-center .label-row {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  margin: 5px auto;
+}
+
+.acc-center .label-row #label,
+label {
+  flex: 1;
+  color: var(--dark-grey);
+}
+
+.acc-center .label-row #value {
+  flex: 2;
+  text-align: right;
+  color: var(--grey);
+  font-style: italic;
+}
+
+.acc-center #btn,
+.change #btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 40px;
+  background: var(--gradient);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin: 20px 2.5%;
+  font-size: 16px;
+}
+
+.change h3 {
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.change p {
+  padding: 10px;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+.change form {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.change form label,
+form input {
+  height: 40px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.change form .input {
+  margin: 5px 0;
+}
+
+.change form label {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px;
+}
+
+.change form input {
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  background: var(--grey3);
+  text-indent: 10px;
+  margin: auto 0;
+  margin-right: 2.5%;
+}
+
+.input {
+  height: 50px;
+  display: flex;
+}
+
+.input .dropdown {
+  height: 40px;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 0px 10px 10px 0px;
+  background: var(--grey3);
+  border: none;
+}
+
+.input img {
+  height: 40px;
+  width: 15%;
+  padding: 10px;
+  border: none;
+  border-right: 1px solid var(--dark-grey);
+  border-radius: 15px 0px 0px 15px;
+  margin: auto 0;
+  margin-left: 2.5%;
+  background: var(--grey3);
+}
+
+.input .password {
+  height: 40px;
+  display: block;
+  width: 70%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background: var(--grey3);
+  border-radius: 0px;
+  margin-right: 0px;
+  border-right: none;
+}
+
+.input #passImg {
+  width: 15%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  margin: auto 2.5% auto 0;
+  background: var(--grey3);
+}
+
+.input #confirmPassImg {
+  width: 15%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  margin: auto 2.5% auto 0;
+  background: var(--grey3);
+}

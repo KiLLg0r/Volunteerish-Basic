@@ -1,0 +1,142 @@
+body {
+  background: var(--bg);
+}
+
+.line {
+  margin: 50px auto;
+  width: 95%;
+  height: 2px;
+  background: var(--grey);
+}
+
+.profile {
+  height: 100%;
+  width: 100%;
+}
+
+.profile h2,
+.profile p,
+.profile h3 {
+  font-weight: bold;
+}
+
+.profile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.profile h2 {
+  margin: 25px 0;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.profile h3 {
+  margin-top: 5px;
+  text-align: center;
+  color: var(--dark-cream);
+}
+
+.profile-info {
+  margin: 25px auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-info > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.profile-info p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.profile-info .head {
+  color: var(--dark-grey);
+  font-size: 1.15em;
+}
+
+.profile-info .down {
+  color: var(--light-red);
+}
+
+#ann-center {
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.ann-center {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  height: 40px;
+  background: var(--grey2);
+  vertical-align: middle;
+  line-height: 40px;
+  text-align: center;
+  border: none;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.error {
+  background: #ddb5b5;
+  color: #a94442;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+
+.success {
+  background: #d4edda;
+  color: #40754c;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+.page-section.page-1 {
+  padding: 10px;
+}
+
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    margin: -30px;
+  }
+}

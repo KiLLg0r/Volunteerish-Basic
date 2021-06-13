@@ -1,0 +1,142 @@
+body {
+  background: var(--bg);
+}
+
+.card {
+  width: 95%;
+  height: auto;
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--silver)), color-stop(var(--bg)), to(var(--silver)));
+  background: linear-gradient(to bottom right, var(--silver), var(--bg), var(--silver));
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 5px 3px var(--grey);
+  box-shadow: 3px 5px 3px var(--grey);
+  overflow: auto;
+  margin: 20px 5%;
+  padding: 20px 5px;
+}
+
+.card span {
+  color: var(--red);
+  font-style: normal;
+}
+
+.card .card-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .card-row-1 .card-img {
+  flex: 1.5;
+  margin: auto 0;
+}
+
+.card .card-row-1 .card-img img {
+  border-radius: 10px;
+  width: 75%;
+  aspect-ratio: 1/1;
+}
+
+.card .card-row-1 .card-info {
+  flex: 2;
+}
+
+.card .card-row-1 .card-info .card-name {
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--light-red);
+  margin: 10px 0px;
+}
+
+.card .card-row-1 .card-info > * {
+  margin: 5px 0;
+  color: var(--dark-grey);
+}
+
+.card .card-row-2 {
+  padding: 10px;
+}
+
+.card .card-row-2 .card-msg p {
+  text-indent: 25px;
+  color: var(--dark-grey);
+}
+
+.card .card-row-2 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: auto -10px;
+}
+
+.card .card-row-2 .buttons > * {
+  margin: 10px 5px 5px;
+}
+
+.card .card-row-2 .buttons .send-msg {
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+  width: auto;
+  height: 40px;
+  background: var(--cream2);
+  line-height: 40px;
+}
+
+.card .card-row-2 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+
+.card .card-row-2 .buttons .activate,
+.help,
+.finish {
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+  width: auto;
+  height: 40px;
+  background: rgb(0, 180, 0);
+  line-height: 40px;
+}
+
+.card .card-row-2 .buttons .delete,
+.close,
+.cancel {
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+  width: auto;
+  height: 40px;
+  background: var(--light-red);
+  line-height: 40px;
+}
+
+.card .card-row-2 .buttons .more-info {
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+  width: auto;
+  height: 40px;
+  background: var(--gradient);
+  line-height: 40px;
+}
+
+.card .card-row-2 .buttons .more-info a {
+  color: white;
+}
+
+.card .card-info-2 .card-difficulty,
+.card-type,
+.card-helping-by {
+  width: 90%;
+  margin: 10px auto 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--dark-grey);
+  font-style: italic;
+}

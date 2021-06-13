@@ -1,0 +1,137 @@
+body {
+  background: var(--bg);
+}
+
+.rounded-corners-gradient-borders {
+  width: 200px;
+  height: 200px;
+  border: double 4px transparent;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(circle at top left, #e8594f, #d4af35 90%);
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #e8594f, #d4af35 90%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+footer {
+  position: fixed;
+  background: var(--bg);
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-section {
+  display: none;
+  padding-bottom: 60px;
+}
+
+.page-section.active {
+  display: block;
+  padding-bottom: 60px;
+}
+
+.link {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #ff0000;
+  width: 100px;
+  height: 100%;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  background: transparent;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0px;
+  text-decoration: none;
+}
+
+.link .icon {
+  margin: 0 auto;
+}
+
+.link .icon .txt {
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+
+.link .icon img {
+  -webkit-filter: invert(20%) sepia(5%) saturate(386%) hue-rotate(2deg) brightness(94%) contrast(80%);
+  filter: invert(20%) sepia(5%) saturate(386%) hue-rotate(2deg) brightness(94%) contrast(80%);
+}
+
+.link.active .icon .txt {
+  color: var(--red);
+}
+
+.link.active .icon img {
+  -webkit-filter: invert(52%) sepia(21%) saturate(1708%) hue-rotate(315deg) brightness(89%) contrast(105%);
+  filter: invert(52%) sepia(21%) saturate(1708%) hue-rotate(315deg) brightness(89%) contrast(105%);
+}
+
+.icon.shop {
+  height: 200px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.link.active .icon.shop {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1), -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--light-red)), color-stop(30%, var(--red)));
+  background: linear-gradient(to bottom, var(--light-red), var(--red) 30%);
+}
+
+.link.active .icon.shop .txt {
+  position: relative;
+  top: 7px;
+  color: #fff;
+}
+
+.link.active .icon.shop img {
+  position: relative;
+  top: 10px;
+  -webkit-filter: brightness(100) saturate(100%);
+  filter: brightness(100) saturate(100%);
+}
+
+.icon.add {
+  height: 200px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.link.active .icon.add {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1), -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--light-red)), color-stop(30%, var(--red)));
+  background: linear-gradient(to bottom, var(--light-red), var(--red) 30%);
+}
+
+.link.active .icon.add .txt {
+  position: relative;
+  top: 7px;
+  color: #fff;
+}
+
+.link.active .icon.add img {
+  position: relative;
+  top: 10px;
+  -webkit-filter: brightness(100) saturate(100%);
+  filter: brightness(100) saturate(100%);
+}

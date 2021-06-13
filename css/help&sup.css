@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg: hsl(47, 25%, 89%);
+  --grey2: hsl(0, 0%, 70%);
+  --grey3: hsl(0, 0%, 85%);
+  --red: hsl(4, 77%, 61%);
+  --light-red: hsl(6, 73%, 68%);
+  --grey: hsl(36, 2%, 55%);
+  --dark-grey: hsl(40, 2%, 25%);
+  --cream: hsl(35, 30%, 75%);
+  --cream2: hsl(35, 40%, 75%);
+  --dark-cream: hsl(35, 40%, 50%);
+  --gold: hsl(46, 65%, 52%);
+  --silver: hsl(330, 3%, 71%);
+  --bronze: hsl(5, 44%, 38%);
+  --blue: hsl(172, 50%, 30%);
+  --green: hsl(108, 100%, 80%);
+  --blue2: hsl(200, 42%, 67%);
+  --white: hsla(0, 0%, 100%, 0.8);
+  --gradient: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+body {
+  background: var(--bg);
+}
+
+.help-support {
+  padding: 10px;
+}
+
+.help-support h3 {
+  margin: -30px 0 15px 0;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.help-support h4 {
+  padding: 10px;
+  color: var(--red);
+  text-align: center;
+  font-size: 1.25em;
+  margin: 10px;
+}
+
+.help-support p {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.help-support .contact-method p {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.help-support .contact-method #label {
+  color: var(--dark-grey);
+  background: var(--dark-grey);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  margin: 0 15px;
+  text-align: left;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: relative;
+  background-color: var(--bg);
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+}
+
+.dropdown .show {
+  display: block;
+}
+
+.dropdown .dropbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: var(--bg);
+  color: var(--dark-grey);
+  border: none;
+  cursor: pointer;
+  padding: 0px 20px 0px 15px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dropdown .dropbtn p {
+  pointer-events: none;
+  color: var(--dark-grey);
+  font-size: 18px;
+}
+
+.dropdown .dropbtn img {
+  margin: 6px 0;
+  pointer-events: none;
+}
+
+.qa {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+
+.qa .q {
+  color: var(--bronze);
+  height: auto;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  word-wrap: break-word;
+}
+
+.qa .a.multiple {
+  display: flex;
+}
+
+.qa .a {
+  color: var(--grey);
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  word-wrap: break-word;
+}
+
+.qa img {
+  width: 100%;
+  height: 50%;
+}
