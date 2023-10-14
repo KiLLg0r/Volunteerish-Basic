@@ -12,6 +12,8 @@
 - Cross platform
 - Integrated in-app messaging
 - Mobile friendly
+- Leaderboard
+- Points system reward
   
  [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)]() 
   
